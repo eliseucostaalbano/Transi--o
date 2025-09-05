@@ -47,7 +47,7 @@ function getMesh(material, needsAnimatedColor = false) {
     dummy.updateMatrix();
 
     mesh.setMatrixAt(i, dummy.matrix);
-    if (needsAnimatedColor) { mesh.setColorAt(i, cor.setScalar(0.1 + 0.9 * Math.random())); }
+    if (needsAnimatedColor) { mesh.setColorAt(i, cor.setHSL(Math.random(), 1, 0.5)); }
   }
   return mesh;
 }

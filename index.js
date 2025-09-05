@@ -16,7 +16,7 @@ function init() {
   container.appendChild(renderer.domElement);
 
   const materialA = new THREE.MeshBasicMaterial({
-    color: 0x00FF00,
+    color: 0xffffff,
     wireframe: true
   });
   const materialB = new THREE.MeshStandardMaterial({
@@ -26,7 +26,8 @@ function init() {
   const cenaA = getFXCena({
     renderer,
     material: materialA,
-    clearColor: 0x000000
+    clearColor: 0x000000,
+    // needsAnimatedColor: true,
   });
   const cenaB = getFXCena({
     renderer,
